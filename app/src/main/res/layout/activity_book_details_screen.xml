@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailsScreen">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/book" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/committee_creater"
+            android:fontFamily="@font/tienne"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <!--        <RatingBar-->
+        <!--            android:id="@+id/simpleRatingBar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:theme="@style/Widget.AppCompat.RatingBar.Small"/>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="Read"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_200"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="Message"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tienne"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/written"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/tienne"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        app:layout_constraintVertical_bias="0.04">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/ic_info"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="About"
+                android:textSize="18sp"
+                app:colorClickableText="#43A6F5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/post_title"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/post_title"
+                app:layout_constraintTop_toBottomOf="@+id/post_title"
+                app:layout_constraintVertical_bias="0.073"
+                app:trimCollapsedText="@string/read_more"
+                app:trimExpandedText="@string/read_less"
+                app:trimLength="250"
+                app:trimMode="trimModeLength" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

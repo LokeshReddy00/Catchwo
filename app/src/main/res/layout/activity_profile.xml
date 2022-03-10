@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView4"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:cardCornerRadius="25dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/cardView3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.475"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/cardView3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+<!--        app:layout_constraintVertical_bias="0.52">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/app" />-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_cover" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <ImageView
+            android:src="@drawable/name"
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/edit"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        app:cardCornerRadius="12.5dp"-->
+    <!--        app:cardElevation="15dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/cardView3"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/verified"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">-->
+
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:src="@drawable/ic_edit"/>-->
+
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/count"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        app:cardCornerRadius="12.5dp"-->
+<!--        app:cardElevation="15dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/cardView4"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/cardView4"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/cardView4"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/cardView4">-->
+
+<!--        <TextView-->
+<!--            android:background="@color/pink"-->
+<!--            android:id="@+id/app_count"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="100"/>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/verified"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:cardCornerRadius="12.5dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3"
+            app:layout_constraintVertical_bias="0.039">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/name"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="Name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/email"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="Email"
+                android:textSize="18sp" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/ic_info"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="About"
+                android:textSize="18sp"
+                app:colorClickableText="#43A6F5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/post_title"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/post_title"
+                app:layout_constraintTop_toBottomOf="@+id/post_title"
+                app:layout_constraintVertical_bias="0.073"
+                app:trimCollapsedText="@string/read_more"
+                app:trimExpandedText="@string/read_less"
+                app:trimLength="250"
+                app:trimMode="trimModeLength" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/books"
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/pink_light"
+                    android:fontFamily="@font/notosansregular"
+                    android:padding="5dp"
+                    android:text="@string/books"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/sur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/purple_200"
+                    android:fontFamily="@font/notosansregular"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Survey Forms"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/reels"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/app"
+                    android:fontFamily="@font/notosansregular"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/reels"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/pink"
+                    android:fontFamily="@font/notosansregular"
+                    android:padding="5dp"
+                    android:text="Posts"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/comm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/teal_200"
+                    android:fontFamily="@font/notosansregular"
+                    android:padding="5dp"
+                    android:text="@string/community"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/prof"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/show"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="@string/profession"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/Accepted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/request"
+                android:fontFamily="@font/notosansregular"
+                android:padding="5dp"
+                android:text="Accept Request"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/app_light"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

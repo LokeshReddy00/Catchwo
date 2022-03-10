@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_chat"
+            android:title="@string/chat" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/reel"
+            android:title="@string/reels" />
+        <item
+            android:id="@+id/club"
+            android:icon="@drawable/ic_club"
+            android:title="@string/clubs" />
+        <item
+            android:id="@+id/com"
+            android:icon="@drawable/ic_com"
+            android:title="@string/community" />
+        <item
+            android:id="@+id/sur"
+            android:icon="@drawable/ic_book"
+            android:title="@string/survey" />
+        <item
+            android:id="@+id/pro"
+            android:icon="@drawable/ic_pro"
+            android:title="@string/profession" />
+        <item
+            android:id="@+id/meo"
+            android:icon="@drawable/ic_meo"
+            android:title="@string/memories" />
+        <item
+            android:id="@+id/book"
+            android:icon="@drawable/ic_sur"
+            android:title="@string/books" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_set"
+            android:title="@string/settings" />
+
+
+    </group>
+</menu>

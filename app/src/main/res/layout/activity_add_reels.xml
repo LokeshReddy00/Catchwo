@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReels">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bd"
+            android:layout_height="@dimen/_350sdp">
+
+            <VideoView
+                android:id="@+id/video_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp"
+                android:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_50sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/cam"
+                android:backgroundTint="@color/gray"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/video_lay"
+                app:layout_constraintStart_toStartOf="@+id/video_lay"
+                app:layout_constraintTop_toTopOf="@+id/video_lay" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/notosansregular"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_lay"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@drawable/bound"
+        android:padding="10dp"
+        android:text="Post"
+        android:textColor="@color/pink"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/text"
+        app:layout_constraintStart_toStartOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+
+    </LinearLayout>
+</ScrollView>

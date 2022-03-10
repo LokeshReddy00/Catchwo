@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCategoryActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Info"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/tienne"
+                android:textAlignment="center"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_phone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Category"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/show"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_cat"
+                app:startIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cat"
+                    android:fontFamily="@font/tienne"
+                    android:inputType="textAutoComplete"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"/>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Name of the Book"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/show"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_book"
+                app:startIconTint="@color/black">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/book_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tienne"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Written By"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/show"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/name"
+                app:startIconTint="@color/black">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/writtenby"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tienne"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Description of book"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/show"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_desc"
+                app:startIconTint="@color/black">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/desc_book"
+                    android:maxLength="500"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tienne"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup">
+
+                <RadioButton
+                    android:id="@+id/paid"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Paid"
+                    android:fontFamily="@font/tienne"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <RadioButton
+                    android:id="@+id/free"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Free"
+                    android:fontFamily="@font/tienne"
+                    android:textSize="@dimen/_15sdp"/>
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/select_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Select Book pdf"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/show"/>
+
+            <TextView
+                android:id="@+id/conform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/cover_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Select Cover Image"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/show"/>
+
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:scaleType="fitCenter"
+                android:id="@+id/cover"
+                android:src="@drawable/ic_img"/>
+
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_200"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

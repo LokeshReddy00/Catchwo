@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="@dimen/_5sdp">
+    
+    
+    <TextView
+        android:fontFamily="@font/tienne"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Update"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="About"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/show"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconTint="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansregular"
+            android:inputType="textMultiLine"
+            android:maxLength="225"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/update_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/notosansregular"
+        android:padding="5dp"
+        android:text="Update Profile"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

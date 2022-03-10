@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Catchwo.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:menu="@menu/home"
+            app:navigationIcon="@color/app"
+            app:popupTheme="@style/Theme.Catchwo.PopupOverlay" />
+
+<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                android:id="@+id/nav_bot"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:elevation="2dp"-->
+<!--                app:itemIconSize="30dp"-->
+<!--                android:background="@color/app"-->
+<!--                app:itemRippleColor="@android:color/transparent"-->
+<!--                app:labelVisibilityMode="unlabeled"-->
+<!--                app:itemIconTint="@drawable/nav_bac"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:menu="@menu/home" />-->
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

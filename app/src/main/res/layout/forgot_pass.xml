@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill your registered Email Id"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosansregular"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_phone_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email Id"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/show"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/email"
+        app:startIconTint="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansregular"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/conform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/pink"
+        android:fontFamily="@font/notosansregular"
+        android:letterSpacing="0.1"
+        android:text="Conform"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InfoFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:reverseLayout="true"
+       app:stackFromEnd="true"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       android:id="@+id/info_rec"/>
+
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bound"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/tienne"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="Load More"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:visibility="gone"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/tienne"
+        android:gravity="center"
+        android:text="Nothing Found"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+
+
+
+
+</LinearLayout>

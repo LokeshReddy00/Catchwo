@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.buddies.catchwo.ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.buddies.catchwo.ui.gallery.GalleryFragment"
+        android:label=""
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.buddies.catchwo.ui.slideshow.SlideshowFragment"
+        android:label=""
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/book"
+        android:name="com.buddies.catchwo.ui.BookFragment"
+        android:label=""
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.buddies.catchwo.ui.NotificationsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.buddies.catchwo.ui.ProfileFragment"
+        android:label=""
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/pro"
+        android:name="com.buddies.catchwo.ui.ProFragment"
+        android:label=""
+        tools:layout="@layout/fragment_pro" />
+    <fragment
+        android:id="@+id/sur"
+        android:name="com.buddies.catchwo.ui.SurFragment"
+        android:label=""
+        tools:layout="@layout/fragment_sur" />
+    <fragment
+        android:id="@+id/club"
+        android:name="com.buddies.catchwo.ui.ClubFragment"
+        android:label=""
+        tools:layout="@layout/fragment_club" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.buddies.catchwo.ui.SettingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/meo"
+        android:name="com.buddies.catchwo.ui.MeoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_meo" />
+    <fragment
+        android:id="@+id/com"
+        android:name="com.buddies.catchwo.ui.CommFragment"
+        android:label=""
+        tools:layout="@layout/fragment_comm" />
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="com.buddies.catchwo.ui.ViewProfileFragment"
+        android:label="fragment_view_profile"
+        tools:layout="@layout/fragment_view_profile" />
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.buddies.catchwo.ui.FriendsFragment"
+        android:label="fragment_friends"
+        tools:layout="@layout/fragment_friends" />
+</navigation>

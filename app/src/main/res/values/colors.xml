@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_200_tx">#80BCA2DD</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="gray">#717070</color>
+    <color name="red">#F80303</color>
+
+    <color name="app">#F4C2C2</color>
+
+    <color name="reqq">#1a63d9</color>
+
+    <color name="pink">#ff007f</color>
+
+    <color name="app_light">#80F4C2C2</color>
+
+    <color name="orange_100">#F8D0DE</color>
+
+    <color name="show">#00aaff</color>
+    <color name="show_tx">#7A88BFDA</color>
+
+    <color name="line">#c3c3c3</color>
+
+    <color name="pink_light">#ff2aff</color>
+
+    <color name="request">#D5422DAF</color>
+
+    <color name="booking">#ffd4ff</color>
+
+    <color name="grey">#E3E3E3</color>
+    <color name="green">#4CAF50</color>
+    <color name="greenDark">#28852C</color>
+
+    <color name="notification">#A6DF4E4E</color>
+    <color name="notification_tx">#FF0000</color>
+
+
+    <color name="orange">#ffaa00</color>
+
+    <color name="mess">#ff4aff</color>
+
+    <color name="blue">#065bdb</color>
+    <color name="blue_tx">#924F82CF</color>
+    <color name="blue_500">#557fff</color>
+
+    <color name="recv">#007CFF</color>
+
+    <color name="reel">#360c0c</color>
+    <color name="reel_tx">#b78c8c</color>
+
+    <color name="txt">#696969</color>
+    <color name="send">#E40078</color>
+
+
+</resources>

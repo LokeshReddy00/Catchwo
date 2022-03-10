@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".CreateCommScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/tienne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Committee Type"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18sdp"
+            android:drawableEnd="@drawable/ic_work"
+            android:padding="@dimen/_5sdp"
+            />
+        
+
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/public_comm"/>
+
+            <TextView
+                android:textColor="@color/txt"
+                android:fontFamily="@font/tienne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Public committee will share your posts in feed globally. This is helpful to your Business"
+                android:padding="@dimen/_5sdp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/private_comm"/>
+
+            <TextView
+                android:textColor="@color/txt"
+                android:fontFamily="@font/tienne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privaate committee will not share your posts in feed globally. This will keep your posts private. Only your committee members can see your Uploads"
+                android:padding="@dimen/_5sdp"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/line"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:hint="Phone No:"
+                android:textColorHint="@color/txt"
+                app:boxStrokeColor="@color/show"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/txt"
+                app:hintTextColor="@color/txt"
+                app:startIconDrawable="@drawable/phone"
+                app:startIconTint="@color/txt">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosansregular"
+                    android:id="@+id/phone"
+                    android:textColor="@color/txt"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:textColorHint="@color/txt"
+                app:boxStrokeColor="@color/show"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/txt"
+                app:hintTextColor="@color/txt"
+                app:startIconDrawable="@drawable/email"
+                app:startIconTint="@color/txt">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosansregular"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/txt"
+                    android:id="@+id/email"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@id/lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/letTheUserLogIn"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/letTheUserLogIn"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="3"
+                        android:background="@color/line" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="(OR)"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/letTheUserLogIn"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="3"
+                        android:background="@color/line" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Use My Account"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/mess"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt"
+                    android:fontFamily="@font/tienne"
+                    android:text="Create your own committee and start your business. All the best for your Business Committee"
+                    android:textAlignment="center"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Committee Name"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/txt"
+                    app:boxStrokeColor="@color/show"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/txt"
+                    app:hintTextColor="@color/txt"
+                    app:startIconDrawable="@drawable/ic_com"
+                    app:startIconTint="@color/txt">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosansregular"
+                        android:id="@+id/name_comm"
+                        android:textColor="@color/txt"
+                        android:textCursorDrawable="@null" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:hint="Committee Description"
+                    android:textColorHint="@color/txt"
+                    app:boxStrokeColor="@color/show"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/txt"
+                    app:hintTextColor="@color/txt"
+                    app:startIconDrawable="@drawable/ic_info"
+                    app:startIconTint="@color/txt">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosansregular"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/txt"
+                        android:id="@+id/comm_desc"
+                        android:textCursorDrawable="@null" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                
+                
+                
+                
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        
+        
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/blue"
+            android:text="Create Committee"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"/>
+        
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

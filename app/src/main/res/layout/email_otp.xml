@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/codeLl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Verification"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/codeSentDescription"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter the verification code"
+            android:textAlignment="center"
+            android:textColor="#777777" />
+
+        <EditText
+            android:id="@+id/codeEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="center_horizontal"
+            android:hint="**********@gmail.com"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textColorHint="#c5c5c5" />
+
+        <TextView
+            android:id="@+id/resendCodeTv"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Didn't get OTP?Resend"
+            android:textAlignment="center"
+            android:textColor="#777777" />
+
+        <Button
+            android:id="@+id/codeSubmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/app"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

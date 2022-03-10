@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="0dp"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+ <ImageView
+     android:id="@+id/img"
+     android:background="@color/purple_500"
+     android:layout_width="match_parent"
+     android:scaleType="fitXY"
+     android:layout_height="150dp"
+     android:src="@drawable/propertylogo"
+     android:contentDescription="@string/todo" />
+
+        <LinearLayout
+            android:id="@+id/profile_lay"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:cardCornerRadius="35dp">
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/name"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="fitXY"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/name"
+                    android:fontFamily="@font/notosansregular"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="@string/email_catchwo_com"
+                    android:textColor="@color/line"
+                    android:fontFamily="@font/notosansregular"
+                    android:textSize="20sp"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:visibility="gone"
+            android:layout_marginEnd="4dp"/>
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/information"
+                android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/information_center"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <LinearLayout
+            android:id="@+id/sur"
+            android:visibility="gone"
+            tools:ignore="UseCompoundDrawables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/todo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="2dp"
+                android:src="@drawable/survey"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/survey"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/meo"
+            tools:ignore="UseCompoundDrawables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/todo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="2dp"
+                android:src="@drawable/implementation"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/memories"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/fri"
+            tools:ignore="UseCompoundDrawables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/todo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="2dp"
+                android:src="@drawable/friends"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/friends"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/pro"
+        tools:ignore="UseCompoundDrawables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/todo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@drawable/professional"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/profession"
+    android:layout_marginStart="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="5dp"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+
+         <LinearLayout
+             android:id="@+id/com"
+             tools:ignore="UseCompoundDrawables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/todo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@drawable/hand"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/community"
+    android:layout_marginStart="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="5dp"/>
+         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/book"
+            tools:ignore="UseCompoundDrawables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/todo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="2dp"
+                android:src="@drawable/book"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/books"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+         <LinearLayout
+             android:id="@+id/club"
+             android:visibility="gone"
+             tools:ignore="UseCompoundDrawables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/todo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@drawable/group"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/clubs"
+    android:layout_marginStart="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="5dp"/>
+         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+         <LinearLayout
+             android:id="@+id/set"
+             tools:ignore="UseCompoundDrawables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/todo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@drawable/settings"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/settings"
+    android:layout_marginStart="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="5dp"/>
+         </LinearLayout>
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/line"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"/>-->
+
+<!--<TextView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="@string/settings"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:textSize="20sp"-->
+<!--    android:textColor="@color/black"-->
+<!--    android:layout_marginTop="5dp"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+         <LinearLayout
+             android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+             <com.airbnb.lottie.LottieAnimationView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 app:lottie_autoPlay="true"
+                 app:lottie_loop="true"
+                 app:lottie_rawRes="@raw/help"
+                 android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+         <LinearLayout
+             android:id="@+id/sup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+
+             <com.airbnb.lottie.LottieAnimationView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 app:lottie_autoPlay="true"
+                 app:lottie_loop="true"
+                 app:lottie_rawRes="@raw/playstore"
+                 android:layout_gravity="end"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/support"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+         <LinearLayout
+             android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+             <com.airbnb.lottie.LottieAnimationView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 app:lottie_autoPlay="true"
+                 app:lottie_loop="true"
+                 app:lottie_rawRes="@raw/about"
+                 android:layout_gravity="end"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/about"
+    android:layout_marginStart="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="5dp"/>
+         </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+         <LinearLayout
+             android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+             <com.airbnb.lottie.LottieAnimationView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 app:lottie_autoPlay="true"
+                 app:lottie_loop="true"
+                 app:lottie_rawRes="@raw/problem"
+                 android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/report_problems"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+         </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+         <LinearLayout
+             android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+             tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@drawable/logout1"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

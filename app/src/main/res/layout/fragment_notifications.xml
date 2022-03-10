@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.NotificationsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:drawableEnd="@drawable/ic_search"-->
+<!--            android:hint="Search" />-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:stackFromEnd="true"
+            app:reverseLayout="true"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

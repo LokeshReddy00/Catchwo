@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".ui.ProFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading1" />
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16sdp"
+        app:sv_animationType="None"
+        app:sv_doneCircleColor="@color/pink"
+        app:sv_doneStepLineColor="@color/pink_light"
+        app:sv_doneStepMarkColor="@color/white"
+        app:sv_selectedCircleColor="@color/black"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/black"
+        app:sv_stepPadding="@dimen/_10sdp"
+        app:sv_typeface="@font/notosansbold" />
+
+    <com.buddies.catchwo.Support.NonSwipViewPager
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button"
+        android:layout_below="@id/step" />
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosansregular"
+            android:padding="5dp"
+            android:text="Previous"
+            android:enabled="false"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/nxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosansregular"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

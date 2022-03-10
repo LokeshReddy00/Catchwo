@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:padding="@dimen/_2sdp"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+
+
+        <include layout="@layout/post_row"
+        android:id="@+id/post_lay_row"/>
+
+
+    <Button
+        android:id="@+id/shareToPublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bound"
+        android:fontFamily="@font/tienne"
+        android:text="Share with Public"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/post_lay_row"
+        app:layout_constraintTop_toBottomOf="@+id/post_lay_row" />
+
+        <Button
+            android:id="@+id/delete"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bound"
+            android:fontFamily="@font/tienne"
+            android:text="Delete Post"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/post_lay_row"
+            app:layout_constraintTop_toBottomOf="@+id/post_lay_row" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_20sdp"
+/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:transitionName="transition_appoint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointScreen">
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/appoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:fontFamily="@font/notosansregular"
+            android:padding="5dp"
+            android:text="Your Appoints"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/reqq"
+            android:fontFamily="@font/notosansregular"
+            android:padding="5dp"
+            android:text="History"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fram_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp" />
+
+
+
+</RelativeLayout>

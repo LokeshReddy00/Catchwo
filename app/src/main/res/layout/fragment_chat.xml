@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/notosansregular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_below="@id/set"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:text="Notify you when ever your post hase been likes and keep you updated with all the activities related ...."/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/notification"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosansregular"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/age_sw" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Private"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:text="Your account will be as a private account others can't see your posts or text you till you allow them..."/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Private"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosansregular"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pra_sw" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appointment"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:text="If you are a in a profession of getting appointment from user can on the switch and get appointments NOW..."/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <TextView
+                    android:id="@+id/appoint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Appointment"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosansregular"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/app_sw" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:text="Verify your account by clicking on the Verify below.."/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <TextView
+                    android:id="@+id/verify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Verify Account"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosansregular"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/i"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+
+            <TextView
+                android:id="@+id/leg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legal"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosansregular"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosansregular"
+                android:text="Terms and Conditions of use"/>
+            <TextView
+                android:id="@+id/policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosansregular"
+                android:text="Privacy Policy"/>
+
+            <TextView
+                android:id="@+id/support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosansregular"
+                android:text="@string/support"/>
+
+            <TextView
+                android:id="@+id/feed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosansregular"
+                android:text="Feed Back"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosansregular"
+                android:text="@string/logout"/>
+
+<!--            <TextView-->
+<!--                android:visibility="gone"-->
+<!--                android:id="@+id/users"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/notosansregular"-->
+<!--                android:text="All Users"/>-->
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/propertylogo"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/notosansregular"
+                android:text="Catchwo v1.0.0"/>
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/app_light"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:fontFamily="@font/notosansregular"
+                android:text="Delete Account"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

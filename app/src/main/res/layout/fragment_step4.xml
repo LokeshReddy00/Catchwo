@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Step4Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading1" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/propertylogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:fitsSystemWindows="true">-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/notosansbold"
+            android:text="Thank you for booking our services !"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="9:00 - 9:30 at 06-01-2022"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/prof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/name"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="CatchWo"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:id="@+id/name_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/notosansbold"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="+91 **********"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="CatchWo"
+            android:textColor="@color/black" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_phone_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Any Query/Information"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/show"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/ic_info"
+            app:startIconTint="@color/black">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/notosansregular"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:maxLength="400"
+                android:textCursorDrawable="@null" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/comfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/pink_light"
+            android:fontFamily="@font/notosansregular"
+            android:padding="5dp"
+            android:text="Complete Booking"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <!--    </ScrollView>-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

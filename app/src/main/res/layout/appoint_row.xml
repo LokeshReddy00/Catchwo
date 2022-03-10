@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:fontFamily="@font/tienne"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            />
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/prof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:fontFamily="@font/tienne"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:fontFamily="@font/tienne"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawableStart="@drawable/ic_info"
+            android:fontFamily="@font/notosansregular"
+            android:padding="5dp"
+            android:text="Query"
+            android:textSize="15dp"
+            app:colorClickableText="#43A6F5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/post_title"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/post_title"
+            app:layout_constraintTop_toBottomOf="@+id/post_title"
+            app:layout_constraintVertical_bias="0.073"
+            app:trimCollapsedText="@string/read_more"
+            app:trimExpandedText="@string/read_less"
+            app:trimLength="250"
+            app:trimMode="trimModeLength" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

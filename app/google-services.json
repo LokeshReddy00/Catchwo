@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1040860700466",
+    "firebase_url": "https://police-1e8ff-default-rtdb.firebaseio.com",
+    "project_id": "police-1e8ff",
+    "storage_bucket": "police-1e8ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040860700466:android:a1387bd2a9f62e30c7812b",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040860700466-gp4t6lp3u91374d4ncj9ijks5t2g2smc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH_QQPXmDkBb77Omx8clkP7JhkhZrxjwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040860700466-gp4t6lp3u91374d4ncj9ijks5t2g2smc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040860700466:android:a5003587f77a9ebbc7812b",
+        "android_client_info": {
+          "package_name": "com.buddies.catchwo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040860700466-gp4t6lp3u91374d4ncj9ijks5t2g2smc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH_QQPXmDkBb77Omx8clkP7JhkhZrxjwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040860700466-gp4t6lp3u91374d4ncj9ijks5t2g2smc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040860700466:android:812f4277b52601fcc7812b",
+        "android_client_info": {
+          "package_name": "com.buddies.policeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040860700466-gp4t6lp3u91374d4ncj9ijks5t2g2smc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH_QQPXmDkBb77Omx8clkP7JhkhZrxjwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040860700466-gp4t6lp3u91374d4ncj9ijks5t2g2smc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
