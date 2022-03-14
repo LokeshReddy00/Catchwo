@@ -28,6 +28,14 @@
             android:textColor="@color/pink"
             android:textSize="25sp" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note"
+            android:layout_gravity="center"
+            android:id="@+id/notification"
+            android:layout_marginEnd="@dimen/_15sdp"/>
+
         <androidx.cardview.widget.CardView
             android:layout_width="50dp"
             android:layout_height="35dp"
