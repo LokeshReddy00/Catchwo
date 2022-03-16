@@ -19,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SlideshowFragment extends Fragment {
 
@@ -35,13 +36,16 @@ public class SlideshowFragment extends Fragment {
         arrayList = new ArrayList<>();
 
 
-        FirebaseDatabase.getInstance().getReference().child("reels").orderByKey().addValueEventListener(new ValueEventListener() {
+
+        FirebaseDatabase.getInstance().getReference().child("reels").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot ds:snapshot.getChildren()){
+
+
                     ReelsModel model = ds.getValue(ReelsModel.class);
                     arrayList.add(model);
-
+                    Collections.reverse(arrayList);
                     adapter = new ReelsAdapter(getActivity(),arrayList);
                     viewPager.setAdapter(adapter);
 

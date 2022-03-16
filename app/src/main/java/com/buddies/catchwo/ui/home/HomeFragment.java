@@ -127,35 +127,36 @@ public class HomeFragment extends Fragment {
         arrayList = new ArrayList<>();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
         reference.keepSynced(true);
-        reference.child("Posts").limitToLast(currentPage*TOTAL_ITEM_EACH_LOAD).addValueEventListener(new ValueEventListener() {
+        reference.child("Posts").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 arrayList.clear();
 
-                for(DataSnapshot ds: snapshot.getChildren()){
+                for(DataSnapshot ds: snapshot.getChildren()) {
                     PostModel postModel = ds.getValue(PostModel.class);
                     arrayList.add(postModel);
-                    adapter = new PostAdapter(getActivity(),arrayList);
+                    adapter = new PostAdapter(getActivity(), arrayList);
                     post_rec.setAdapter(adapter);
                     loading.setVisibility(View.GONE);
+                    more.setVisibility(View.VISIBLE);
 
-                    if(adapter.getItemCount() == 0){
-                        loading.setVisibility(View.GONE);
-                        post_rec.setVisibility(View.GONE);
-                        nothing.setVisibility(View.VISIBLE);
-                    }else {
-                        loading.setVisibility(View.GONE);
-                        post_rec.setVisibility(View.VISIBLE);
-                        nothing.setVisibility(View.GONE);
-                        if(adapter.getItemCount() == initial){
-                            more.setVisibility(View.GONE);
-                            currentPage--;
-                        }else {
-                            more.setVisibility(View.VISIBLE);
-                        }
+//                    if(adapter.getItemCount() == 0){
+//                        loading.setVisibility(View.GONE);
+//                        post_rec.setVisibility(View.GONE);
+//                        nothing.setVisibility(View.VISIBLE);
+//                    }else {
+//                        loading.setVisibility(View.GONE);
+//                        post_rec.setVisibility(View.VISIBLE);
+//                        nothing.setVisibility(View.GONE);
+//                        if(adapter.getItemCount() == initial){
+//                            more.setVisibility(View.GONE);
+//                            currentPage--;
+//                        }else {
+//                            more.setVisibility(View.VISIBLE);
+//                        }
 
-                    }
+
 
                 }
 
